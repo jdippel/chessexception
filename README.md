@@ -1,3 +1,5 @@
+![Build Status - Github CI](https://github.com/PIUGroup/chessexception/workflows/Build%20Status%20-%20Github%20CI/badge.svg)
+
 # README #
 
 This README documents a library for chess exceptions.
