@@ -169,7 +169,7 @@
         <repository>
             <id>github</id>
             <name>GitHub PIUG Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Huluvu424242/${project.artifactId}</url>
+            <url>https://maven.pkg.github.com/PIUGroup/${project.artifactId}</url>
         </repository>
     </distributionManagement>
   
