@@ -12,6 +12,13 @@ All exceptions concerning chess383 will be derived from that exception.
 
 * This library will be included as a dependency
 
+### How do I build this artifact? ###
+
+```shell script
+>cd <project folder>
+>./mvnw clean install
+```
+
 ### Who do I talk to? ###
 
 * Repo owner or admin
