@@ -31,14 +31,14 @@ import org.junit.jupiter.api.Test;
  * </p>
  *
  * @author    Jörg Dippel
- * @version   July 2020
+ * @version   September 2021
  *
  */
-@DisplayName("the public method Position change( ) for class Transition is tested for castlings")
+@DisplayName("If an exception is thrown then the exception is the correct instance with related message")
 public class Chess383ExceptionTest {
     
     @Test
-    @DisplayName("throwing an chess exception")
+    @DisplayName("throwing a chess exception")
     public void throwingAChessException() {
         
         assertThatThrownBy(() -> { foo(); })
