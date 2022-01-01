@@ -164,6 +164,14 @@
           </plugin>
       </plugins>
   </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub PIUG Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/PIUGroup/${project.artifactId}</url>
+        </repository>
+    </distributionManagement>
   
   <reporting>
     <plugins>
