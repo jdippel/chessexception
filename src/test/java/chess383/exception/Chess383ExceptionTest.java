@@ -31,7 +31,7 @@ import org.junit.jupiter.api.Test;
  * </p>
  *
  * @author    Jörg Dippel
- * @version   September 2021
+ * @version   April 2022
  *
  */
 @DisplayName("If an exception is thrown then the exception is the correct instance with related message")
@@ -48,6 +48,6 @@ public class Chess383ExceptionTest {
     
     private static void foo() {
         
-        throw new Chess383Exception( "this is an error message" );
+        throw Chess383Exception.create( "this is an error message" );
     }
 }

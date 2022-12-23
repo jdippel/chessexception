@@ -2,7 +2,7 @@
  *  Chess383Exception.java
  * 
  *  chess383 is a collection of chess related utilities.
- *  Copyright (C) 2010-2020 Jörg Dippel
+ *  Copyright (C) 2010-2022 Jörg Dippel
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ package chess383.exception;
  * This class defines a derived exception.
  *
  * @author    Jörg Dippel
- * @version   Juli 2020
+ * @version   Mai 2022
  * 
  */
 public class Chess383Exception extends RuntimeException {
@@ -32,20 +32,18 @@ public class Chess383Exception extends RuntimeException {
     /**
      * exception is derived from Exception which implements interface java.io.Serializable
      */
-    private static final long serialVersionUID = -5589072119962995160L;
+    private static final long serialVersionUID = -7614958876881457571L;
 
-    /**
-     * Constructor creates a special exception
-     */    
+    /** ---------  Constructors  ------------------------------ */
+
     public Chess383Exception( ) { }
-    
-    /**
-     * Constructor creates a special exception
-     * 
-     * @param message is a description of the exception
-     */    
-    public Chess383Exception( String message ) {
-        
-        super( message );
-    }
+
+    public Chess383Exception( String message ) { super( message ); }
+
+    /** ---------  Factory  ----------------------------------- */
+
+    public static Chess383Exception create( ) { return new Chess383Exception(); }
+
+    public static Chess383Exception create( String message ) { return new Chess383Exception( message ); }
+
 }
